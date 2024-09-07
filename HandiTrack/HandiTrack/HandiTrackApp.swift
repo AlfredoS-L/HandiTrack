@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import SwiftData
 
 @main
 struct HandiTrackApp: App {
@@ -13,5 +14,6 @@ struct HandiTrackApp: App {
         WindowGroup {
             ContentView()
         }
+        .modelContainer(for: Round.self)
     }
 }
